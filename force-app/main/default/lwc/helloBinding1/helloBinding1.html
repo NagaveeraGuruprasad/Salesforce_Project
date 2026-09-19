@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="HelloValuesBinding1" icon-name="custom:custom14">
+        <div class="slds-var-m-around_medium">
+            <p> Hello, {WelcomeLWC}!</p>
+            <lightning-input
+            label="Name" value={WelcomeLWC} onchange={handlechange} >
+        </lightning-input>
+         </div>
+         <c-view-source source="lwc/helloBinding" slot="footer">
+            Change the value of a bound property when the value of an input
+            field changes. Type something in the input field to see the recipe
+            in action.
+        </c-view-source>
+    </lightning-card>
+    
+</template>

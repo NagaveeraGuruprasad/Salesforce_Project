@@ -1,0 +1,22 @@
+<template>
+    <lightning-card
+        title ="HelloConditionalRendering 1"
+        icon-name="custom:custom14" >
+        <div class="slds-var-m-around_medium">
+        <lightning-input
+              type="checkbox"
+              label="Show details"
+              onchange={MarkChekbox} >
+        </lightning-input>
+  
+    <div class="slds-var-m-vertical_medium">
+    <template lwc:if={areDetailsVisible}>
+        Details are visible
+    </template>
+    <template lwc:else>
+        Details are not visible
+    </template>
+</div>
+</div>
+    </lightning-card>
+</template>

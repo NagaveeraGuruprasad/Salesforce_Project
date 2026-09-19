@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="helloConditionalRendering" icon-name ="custom:custom14">
+        <lightning-input type="checkbox" label="It is corona" onchange={handlechange}>
+        </lightning-input>
+        <template if:true={showmask}>    
+        <p> 
+            Wear Mask
+            </p>
+            <img src="https://media1.giphy.com/media/JRsY1oIVA7IetTkKVO/source.gif">
+        </template>
+      </lightning-card> 
+</template>

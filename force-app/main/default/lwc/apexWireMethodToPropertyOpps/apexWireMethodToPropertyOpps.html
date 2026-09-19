@@ -1,0 +1,16 @@
+<template>
+<lightning-card  title="apexWireMethodToPropertyOpps" 
+                icon-name="custom:custom63">
+
+                <div class="slds-var-m-around_medium">
+                <template if:true={OppsList.data}>
+                    <template for:each={OppsList.data} for:item="getOppsData">
+                        <p key = {getOppsData.id}> {getOppsData.Name} </p>
+                    </template>
+                    </template>
+                    <template if:true={OppsList.error}>
+                        <c-error-panel errors={OppsList.error}></c-error-panel>
+            </template>
+                </div>
+</lightning-card>
+</template>
